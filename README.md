@@ -34,11 +34,16 @@ npm install aframe-canvas
         return 'rgb(' + r + ',' + g + ',' + b + ')';
     }
     window.setInterval(function(){
+        //make the whole canvas transparent
+        ctx.clearRect(0,0,500,500);
+
+        //Draw rectangle adn text
         ctx.fillStyle = getRandomColor();
         ctx.fillRect(Math.random()*500,Math.random()*500,50,50);
         ctx.fillStyle = "black";
         ctx.font = "100px serif";
         ctx.fillText("Hello world", 10, 100);
+        
         //this update function says to update the texture in aframe
         ctx.update();
     },100)
