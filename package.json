@@ -1,0 +1,28 @@
+{
+  "name": "aframe-canvas",
+  "version": "0.0.1",
+  "description": "A component for putting an HTML canvas in VR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardanaya/aframe-canvas.git"
+  },
+  "keywords": [
+    "aframe",
+    "graphics",
+    "vr",
+    "2d"
+  ],
+  "author": "Richard Anaya <richard.anaya@gmail.com> (http://www.richardanaya.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardanaya/aframe-canvas/issues"
+  },
+  "homepage": "https://github.com/richardanaya/aframe-canvas#readme",
+  "dependencies": {
+    "aframe": "latest"
+  }
+}
