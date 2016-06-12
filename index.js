@@ -33,7 +33,7 @@
 				return ctx;
 			}
 			var texture = new THREE.Texture(this.canvas);
-			var material = new THREE.MeshBasicMaterial({ map: texture });
+			var material = new THREE.MeshBasicMaterial({ map: texture, transparent: true });
 			this.el.object3D.children[0].material = material;
 		}
 	});

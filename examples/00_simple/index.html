@@ -5,6 +5,7 @@
 </head>
 <body>
 <a-scene>
+    <a-sky color="#6EBAA7"></a-sky>
     <a-plane id="screen" position="0 1.25 -1" color="red" scale="3 3 3" canvas-2d="width:500;height:500"/>
 </a-scene>
 </body>
@@ -17,6 +18,8 @@
         return 'rgb(' + r + ',' + g + ',' + b + ')';
     }
     window.setInterval(function(){
+
+        ctx.clearRect(0,0,500,500);
         ctx.fillStyle = getRndColor();
         ctx.fillRect(Math.random()*500,Math.random()*500,50,50);
         ctx.fillStyle = "black";
