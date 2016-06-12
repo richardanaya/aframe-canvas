@@ -1,6 +1,16 @@
+# aframe-canvas
+
 This is a library for easily allowing canvas in aframe VR.
 
 ![hello world in aframe](http://i.imgur.com/2Fw1Ysi.png)
+
+# Installing
+
+```
+npm install aframe-canvas
+```
+
+#Example
 
 ```html 
 <html>
