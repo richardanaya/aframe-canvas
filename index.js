@@ -40,5 +40,5 @@
 })(
 	typeof window !== "undefined" ? window : {},
 	typeof module !== "undefined" ? module : {},
-	typeof require !== "undefined" ? require("aframe") : (AFRAME || window.AFRAME)
+	typeof require !== "undefined" ? AFRAME || window.AFRAME || require("aframe") : (AFRAME || window.AFRAME)
 );
