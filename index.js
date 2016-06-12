@@ -1,5 +1,5 @@
-// aframe-inventory3d.js
-// repo    : https://github.com/richardanaya/aframe-inventory3d
+// aframe-canvas.js
+// repo    : https://github.com/richardanaya/aframe-canvas
 // license : MIT
 
 (function (window, module, AFRAME) {

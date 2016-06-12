@@ -1,6 +1,6 @@
 {
   "name": "aframe-canvas",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A component for putting an HTML canvas in VR",
   "main": "index.js",
   "scripts": {
