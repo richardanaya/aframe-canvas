@@ -4,6 +4,11 @@ This is a library for easily allowing canvas in aframe VR.
 
 ![hello world in aframe](http://i.imgur.com/2Fw1Ysi.png)
 
+Features
+* Transparent canvas background
+* Canvas can be resized
+* Easily update the 3d texture from canvas with update() function on Canvas2D context
+
 # Installing
 
 ```
