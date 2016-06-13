@@ -6,7 +6,7 @@
 	"use strict";
 	AFRAME = AFRAME.aframeCore || AFRAME;
 
-	AFRAME.registerComponent('canvas-2d', {
+	AFRAME.registerComponent('canvas-material', {
 		schema: {
 			width: {
 				type: 'int',
@@ -25,12 +25,12 @@
 			this.canvas.width = this.data.width;
 			this.canvas.height = this.data.height;
 			var _this = this;
-			this.el.getContext = function(){
+			this.getContext = function(){
 				var ctx = _this.canvas.getContext("2d");
-				ctx.update = function(){
-					texture.needsUpdate = true;
-				}
 				return ctx;
+			}
+			this.updateTexture = function(){
+				texture.needsUpdate = true;
 			}
 			var texture = new THREE.Texture(this.canvas);
 			var material = new THREE.MeshBasicMaterial({ map: texture, transparent: true });
